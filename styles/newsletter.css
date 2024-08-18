@@ -1,0 +1,80 @@
+.newsletter {
+    background-color: var(--cor-de-fundo-newsletter);
+    padding: 5rem 0; /* Padding ajustado para rem */
+}
+
+.newsletter__container {
+    margin: 0 auto;
+    max-width: 50rem; /* Max-width ajustado para rem */
+    padding: 0 1rem; /* Adicionado padding para celulares */
+}
+
+.newsletter__titulo {
+    color: var(--cor-texto);
+    font-family: var(--fonte-titulo);
+    font-size: 2rem; /* Font-size ajustado para rem */
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 2rem; /* Margin-bottom ajustado para rem */
+}
+
+.newsletter__formulario {
+    display: flex;
+    gap: 1rem; /* Gap ajustado para rem */
+}
+
+.newsletter__label {
+    visibility: hidden;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+
+.newsletter__input {
+    flex-grow: 1;
+    height: 3rem; /* Height ajustado para rem */
+    padding: 0.875rem 1.5rem; /* Padding ajustado para rem */
+    border: 2px solid var(--cor-de-fundo-footer);
+    border-radius: 0.5rem; /* Border-radius ajustado para rem */
+}
+
+.newsletter__input::placeholder {
+    color: var(--cor-texto);
+    font-family: var(--fonte-texto);
+    font-size: 1rem; /* Font-size ajustado para rem */
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+.newsletter_button {
+    padding: 1rem; /* Padding ajustado para rem */
+    color: var(--cor-texto-claro);
+    background-color: var(--cor-de-fundo-footer);
+    font-family: var(--fonte-texto);
+    font-size: 1rem; /* Font-size ajustado para rem */
+    line-height: 1.2em;
+    border: none;
+    border-radius: 0.5rem; /* Border-radius ajustado para rem */
+}
+
+/* Estilo responsivo para celulares */
+@media (max-width: 480px) {
+
+    .newsletter {
+
+        padding: 1.5rem 2.5rem; 
+    }
+
+
+    .newsletter__formulario {
+        flex-direction: column; /* Lista de formulário em coluna */
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .newsletter__input {
+        width: 100%;
+    }
+
+}

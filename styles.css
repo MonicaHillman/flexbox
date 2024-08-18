@@ -1,0 +1,28 @@
+:root {
+    --cor-texto: #1e1e1e;
+    --cor-texto-hover: #252530;
+    --cor-texto-claro: #ffffff;
+    --cor-texto-destaque: #6F99FF;
+    --cor-faixa-etaria: #F5D010;
+    --cor-faixa-etaria-livre: #C3FF95;
+
+    --cor-de-fundo-faixa-etaria: #EFEFEF;
+    --cor-de-fundo-input: #EFEFEF;
+    --cor-de-fundo: #ffffff;
+    --cor-de-fundo-newsletter: #CCDBFF;
+    --cor-de-fundo-footer: #1E1E1E;
+    --cor-de-fundo-combo: #111114;
+
+    --border-color: #A6A6A6;
+    --box-shadow-card: 0px 4px 24px 0px #7B7B7B26;
+
+    --fonte-texto: 'Poppins', sans-serif;
+    --fonte-titulo: 'Dela Gothic One', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}

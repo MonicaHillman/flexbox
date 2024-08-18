@@ -1,0 +1,74 @@
+.banner {
+    background-image: url("../images/Banner.png");
+    height: 60vh; /* Altura usando unidades baseadas na viewport */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 15%; /* Padding baseado na largura da viewport */
+}
+
+.banner__titulo {
+    font-family: var(--fonte-titulo);
+    font-size: 4.75rem; /* Tamanho da fonte usando rem */
+    font-weight: 400;
+    line-height: 1.2em; /* Line-height baseado em em */
+    width: 35.313rem; /* Largura usando porcentagem */
+
+    color: var(--cor-texto-claro);
+}
+
+.banner__label {
+    visibility: hidden;
+    position: absolute;
+    top: -1px;
+    left: -1px;
+}
+
+.banner__titulo-destaque {
+    color: var(--cor-texto-destaque);
+    font-size: 4.75rem
+}
+
+/* Estilos Responsivos */
+@media (max-width: 1024px) {
+    .banner {
+        height: 35vh; /* Altura usando vh */
+        padding-left: 14vw; /* Padding menor para telas médias */
+    }
+
+    .banner__titulo {
+        font-size: 4rem; /* Redução no tamanho da fonte */
+        line-height: 1.2em;
+        width: 80%; /* Largura ajustada */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        height: 30vh;
+        padding-left: 10vw; /* Padding mais reduzido */
+    }
+
+    .banner__titulo {
+        font-size: 3rem; /* Tamanho da fonte menor para tablets */
+        line-height: 1.2em;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 25vh; /* Altura para celulares */
+        padding-left: 5vw; /* Padding menor ainda */
+    }
+
+    .banner__titulo {
+        font-size: 2.25rem; /* Tamanho da fonte reduzido para celulares */
+        line-height: 1.2em;
+        width: 95%;
+    }
+}
