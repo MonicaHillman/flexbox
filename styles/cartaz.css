@@ -1,20 +1,35 @@
 .cartaz {
-    margin: 80px 15%;
+    margin: var(--margin-l) auto;
+    max-width: var(--max-width-block);
+
+}
+
+/* Campo de pesquisa */
+.cartaz__pesquisa {
+    margin: var(--margin-s) auto var(--margin-m); 
+
+    padding: var(--padding-xs) var(--padding-s);
+    width: 100%;
+    max-width: 42.375rem; 
+
+    border-radius: 8px; 
+
+    border: 2px solid var(--border-color); 
+    display: block;
 }
 
 /* Lista de menus */
 .menu-list {
     display: flex;
-    gap: 1rem;
+    gap: var(--gap-s);
     list-style-type: none;
-   
 }
 
 .menu-list__item {
     font-family: var(--fonte-texto);
-    font-size: 1.25rem; /* Font-size em rem */
+    font-size: var(--font-size-m);
     font-weight: 400;
-    line-height: 1.875rem; /* Line-height em rem */
+    line-height: var(--line-height-m);
 }
 
 .menu-list__item-ativo {
@@ -22,16 +37,6 @@
     text-decoration: underline;
 }
 
-/* Campo de pesquisa */
-.cartaz__pesquisa {
-    margin: 2.5rem auto 3rem; /* Margin em rem */
-    padding: 0.875rem 1rem; /* Padding ajustado para mais clareza */
-    width: 100%;
-    max-width: 42.375rem; /* Max-width em rem */
-    border-radius: 0.5rem; /* Border-radius em rem */
-    border: 0.125rem solid var(--border-color); /* Border em rem */
-    display: block;
-}
 
 .cartaz__pesquisa::placeholder {
     color: var(--cor-texto);
@@ -44,52 +49,50 @@
 /* Título */
 .cartaz__titulo {
     font-family: var(--fonte-titulo);
-    font-size: 3.0625rem; /* Font-size em rem */
+    font-size: var(--font-size-l);
     font-weight: 400;
-    line-height: 3.6875rem; /* Line-height em rem */
-    margin-bottom: 2.5rem; /* Margin em rem */
+    line-height: var(--line-height-l);
+    margin-bottom: var(--margin-l);
 }
 
 /* Estilo responsivo para tablets */
 @media (max-width: 768px) {
     .cartaz {
-        margin: 3rem 2rem; /* Margin ajustada para telas menores */
+        margin: var(--margin-l) var(--margin-m);
     }
 
     .menu-list {
-        gap: 0.75rem; /* gap ajustado para tablets */
+        gap: var(--gap-xs);
     }
 
     .cartaz__pesquisa {
-        padding: 0.75rem 1rem; /* Padding ajustado para tablets */
-        max-width: 100%; /* Ajusta a largura máxima */
+        padding: var(--padding-xs) var(--padding-s);
+        max-width: 100%;
     }
 
     .cartaz__titulo {
-        font-size: 2.5rem; /* Font-size ajustado para tablets */
-        line-height: 3rem; /* Line-height ajustado para tablets */
+        font-size: var(--font-size-m);
+        line-height: var(--line-height-m);
     }
-
- 
 }
 
 /* Estilo responsivo para celulares */
 @media (max-width: 480px) {
     .cartaz {
-        margin: 1.5rem 1rem; /* Margin ajustada para celulares */
+        margin: var(--margin-s) var(--margin-xs);
     }
 
     .menu-list {
-        flex-direction: column; /* Lista de menu em coluna */
-        gap: 0.5rem; /* gap ajustado para celulares */
+        flex-direction: column;
+        gap: var(--gap-xs);
     }
 
     .cartaz__pesquisa {
-        padding: 0.5rem 0.75rem; /* Padding ajustado para celulares */
+        padding: var(--padding-xs) var(--padding-s);
     }
 
     .cartaz__titulo {
-        font-size: 2rem; /* Font-size ajustado para celulares */
-        line-height: 2.5rem; /* Line-height ajustado para celulares */
+        font-size: var(--font-size-m);
+        line-height: var(--line-height-m);
     }
 }

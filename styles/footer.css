@@ -1,39 +1,40 @@
+/* Footer */
 .footer {
     background-color: var(--cor-de-fundo-footer);
-    padding: 3.75rem 10%; /* Padding ajustado para rem */
+    padding: var(--padding-xl) var(--padding-m); /* Padding ajustado para variáveis */
     color: var(--cor-texto-claro);
     font-family: var(--fonte-texto);
     font-weight: 400;
-    font-size: 1.25rem; /* Font-size ajustado para rem */
+    font-size: var(--font-size-m); /* Font-size ajustado para variáveis */
     line-height: 1.5em;
 }
 
 .footer__column-text {
     font-weight: 400;
-    margin-top: 1.5rem; /* Margin-top ajustado para rem */
+    margin-top: var(--margin-s); /* Margin-top ajustado para variáveis */
 }
 
 .footer__columns {
     display: flex;
-    justify-content: space-between;
-    row-gap: 2.5rem;
-    gap: 1rem;
+    justify-content: space-around;
+    row-gap: var(--gap-m); /* Row-gap ajustado para variáveis */
+    gap: var(--gap-s); /* Gap ajustado para variáveis */
     flex-wrap: wrap; /* Permite que as colunas quebrem para a linha seguinte se necessário */
 }
 
 .footer__column-title {
     font-family: var(--fonte-titulo);
-    font-size: 1.25rem; /* Font-size ajustado para rem */
+    font-size: var(--font-size-m); /* Font-size ajustado para variáveis */
     line-height: 1.2em;
     font-weight: 400;
 }
 
 .footer__column-list {
-    margin-top: 1rem; /* Margin-top ajustado para rem */
+    margin-top: var(--margin-s); /* Margin-top ajustado para variáveis */
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem; /* Gap ajustado para rem */
+    gap: var(--gap-xs); /* Gap ajustado para variáveis */
 }
 
 .footer__column-list li a {
@@ -46,19 +47,16 @@
     flex-direction: row;
 }
 
-
-
+/* Estilos responsivos */
 @media (max-width: 768px) {
     .footer {
-        padding: 3.75rem; /* Ajusta o padding para telas de tamanho médio */
+        padding: var(--padding-l); /* Padding ajustado para variáveis */
     }
 
     .footer__columns {
-     
-        gap: 2rem;
-
+        gap: var(--gap-l); /* Gap ajustado para variáveis */
     }
-    
+
     .footer__column {
         flex: 1;
     }
@@ -70,27 +68,20 @@
         align-self: center;
         margin: 0 auto;
     }
-    
-
 }
 
 @media (max-width: 480px) {
     .footer {
-        padding: 3rem 1.5rem; /* Ajusta o padding para celulares */
+        padding: var(--padding-m) var(--padding-xs); /* Padding ajustado para variáveis */
     }
 
-
-
     .footer__columns {
-        gap: 1.5rem;
+        gap: var(--gap-m); /* Gap ajustado para variáveis */
         flex-direction: column; /* Reduz o espaçamento entre as colunas para telas menores */
     }
 
     .footer__column-list-social-media {
         flex-direction: row;
-  
         justify-content: center;
     }
-
-
 }

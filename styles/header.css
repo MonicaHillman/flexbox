@@ -1,97 +1,83 @@
+.header {
+    margin: 0 auto;
+    max-width: var(--max-width-block);
+}
 /* Estilo padrão para desktop */
 .nav__list {
-    display: flex; 
-    gap: 3.5rem; /* gap em rem para ser responsivo */
-    justify-content: center;
+    display: flex;
+    gap: var(--gap-xl); /* gap em rem para ser responsivo */
+    justify-content: space-between;
     align-items: center;
-    padding: 1rem 0; /* Padding em rem */
+    padding: var(--padding-s) 0; /* Padding em rem */
     list-style-type: none;
     flex-wrap: wrap;
 }
-
 .item__list {
     display: flex;
-    gap: 1.5rem; /* gap em rem */
+    gap: var(--gap-m); /* gap em rem */
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 .nav__link {
     text-decoration: none;
     color: var(--cor-texto);
     font-family: var(--fonte-texto);
-    font-size: 1.25rem; /* Font-size em rem */
+    font-size: var(--font-size-m); /* Font-size em rem */
     font-weight: 400;
 }
-
 .nav__link:hover {
     color: var(--cor-texto-hover);
 }
 
-.nav__label {
-    visibility: hidden;
-    position: absolute;
-    top: -1px;
-    left: -1px;
-}
-
 .nav__input {
-    width: 19.5rem; /* Width em rem */
-    height: 3.1875rem; /* Height em rem */
+    width: 100%; /* Width em 100% */
     border-radius: 0.5rem; /* Border-radius em rem */
     border: none;
-    padding: 0.5rem 1rem; /* Padding em rem */
+    padding: var(--padding-s); /* Padding em rem */
     background-color: var(--cor-de-fundo-input);
     background-image: url('../images/location_on.svg');
     background-repeat: no-repeat;
     background-position: 95% center;
 }
-
 .nav__input::placeholder {
     color: var(--cor-texto);
     font-family: var(--fonte-texto);
-    font-size: 1rem; /* Font-size em rem */
+    font-size: var(--font-size-s); /* Font-size em rem */
     font-weight: 400;
 }
-
 .menu__toggle {
     display: none;
 }
-
 /* Estilo responsivo para tablets */
 @media (max-width: 768px) {
     .nav__list {
         flex-wrap: wrap;
-        row-gap: 2rem; /* gap de linha em rem */
-        gap: 1.4375rem; /* gap em rem */
+        row-gap: var(--gap-l); /* gap de linha em rem */
+        gap: var(--gap-s); /* gap em rem */
     }
-
     .nav__item_form {
         flex: 1 1 100%;
         text-align: center;
-        order: 1;
+        order: 1; /* Valor padrão é zero, valores menores aparecem primeiro */
     }
 }
-
 /* Estilo responsivo para celulares */
 @media (max-width: 480px) {
     .item__list {
         display: none; /* Esconde o menu por padrão */
         flex-direction: column;
-        gap: 1rem; /* gap em rem */
+        gap: var(--gap-s); /* gap em rem */
         background-color: var(--cor-de-fundo); /* Cor de fundo do menu */
-        padding: 1rem; /* Padding em rem */
+        padding: var(--padding-s); /* Padding em rem */
         position: absolute;
         top: 100%; /* Posiciona abaixo do header */
         left: 0;
         width: 100%;
         box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Sombra para destaque */
     }
-
     .menu__toggle {
         display: block;
         cursor: pointer;
-
     }
 }

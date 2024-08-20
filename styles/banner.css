@@ -4,11 +4,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
 
+.banner__container {
+    max-width: var(--max-width-block);
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
-
-    padding-left: 15%; /* Padding baseado na largura da viewport */
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: flex-start; /* Align items to the left */
 }
 
 .banner__titulo {
@@ -16,36 +22,17 @@
     font-size: 4.75rem; /* Tamanho da fonte usando rem */
     font-weight: 400;
     line-height: 1.2em; /* Line-height baseado em em */
-    width: 35.313rem; /* Largura usando porcentagem */
-
     color: var(--cor-texto-claro);
+   width: 50%;
 }
 
-.banner__label {
-    visibility: hidden;
-    position: absolute;
-    top: -1px;
-    left: -1px;
-}
 
 .banner__titulo-destaque {
     color: var(--cor-texto-destaque);
+    /* V: será que podemos criar variaveis pros tamanhos das fontes? */
     font-size: 4.75rem
 }
 
-/* Estilos Responsivos */
-@media (max-width: 1024px) {
-    .banner {
-        height: 35vh; /* Altura usando vh */
-        padding-left: 14vw; /* Padding menor para telas médias */
-    }
-
-    .banner__titulo {
-        font-size: 4rem; /* Redução no tamanho da fonte */
-        line-height: 1.2em;
-        width: 80%; /* Largura ajustada */
-    }
-}
 
 @media (max-width: 768px) {
     .banner {
@@ -58,6 +45,10 @@
         line-height: 1.2em;
         width: 90%;
     }
+
+    .banner__titulo-destaque {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -69,6 +60,10 @@
     .banner__titulo {
         font-size: 2.25rem; /* Tamanho da fonte reduzido para celulares */
         line-height: 1.2em;
-        width: 95%;
+   
+    }
+
+    .banner__titulo-destaque {
+        font-size: 2.25rem; 
     }
 }

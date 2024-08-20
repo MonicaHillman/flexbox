@@ -1,70 +1,60 @@
 .newsletter {
     background-color: var(--cor-de-fundo-newsletter);
-    padding: 5rem 0; /* Padding ajustado para rem */
+    padding: var(--padding-xxl) 0; /* Padding ajustado para variáveis */
 }
 
 .newsletter__container {
     margin: 0 auto;
-    max-width: 50rem; /* Max-width ajustado para rem */
-    padding: 0 1rem; /* Adicionado padding para celulares */
+    max-width: var(--max-width-block); /* Max-width ajustado para variáveis */
+    padding: 0 var(--padding-s); /* Padding ajustado para variáveis */
 }
 
 .newsletter__titulo {
     color: var(--cor-texto);
     font-family: var(--fonte-titulo);
-    font-size: 2rem; /* Font-size ajustado para rem */
+    font-size: var(--font-size-l); /* Font-size ajustado para variáveis */
     line-height: 1.2em;
     text-align: center;
-    margin-bottom: 2rem; /* Margin-bottom ajustado para rem */
+    margin-bottom: var(--margin-l); /* Margin-bottom ajustado para variáveis */
 }
 
 .newsletter__formulario {
     display: flex;
-    gap: 1rem; /* Gap ajustado para rem */
-}
-
-.newsletter__label {
-    visibility: hidden;
-    position: absolute;
-    top: -1px;
-    left: -1px;
+    gap: var(--gap-s); /* Gap ajustado para variáveis */
 }
 
 .newsletter__input {
     flex-grow: 1;
-    height: 3rem; /* Height ajustado para rem */
-    padding: 0.875rem 1.5rem; /* Padding ajustado para rem */
+    height: 3rem; /* Height não possui variável definida */
+    padding: var(--padding-s) var(--padding-m); /* Padding ajustado para variáveis */
     border: 2px solid var(--cor-de-fundo-footer);
-    border-radius: 0.5rem; /* Border-radius ajustado para rem */
+    border-radius: var(--padding-xs); /* Border-radius ajustado para variáveis */
 }
 
 .newsletter__input::placeholder {
     color: var(--cor-texto);
     font-family: var(--fonte-texto);
-    font-size: 1rem; /* Font-size ajustado para rem */
+    font-size: var(--font-size-s); /* Font-size ajustado para variáveis */
     line-height: 1.5em;
     font-weight: 400;
 }
 
 .newsletter_button {
-    padding: 1rem; /* Padding ajustado para rem */
+    padding: var(--padding-s); /* Padding ajustado para variáveis */
     color: var(--cor-texto-claro);
     background-color: var(--cor-de-fundo-footer);
     font-family: var(--fonte-texto);
-    font-size: 1rem; /* Font-size ajustado para rem */
+    font-size: var(--font-size-s); /* Font-size ajustado para variáveis */
     line-height: 1.2em;
     border: none;
-    border-radius: 0.5rem; /* Border-radius ajustado para rem */
+    border-radius: var(--padding-xs); /* Border-radius ajustado para variáveis */
 }
 
 /* Estilo responsivo para celulares */
 @media (max-width: 480px) {
-
     .newsletter {
-
-        padding: 1.5rem 2.5rem; 
+        padding: var(--padding-xs) var(--padding-m); /* Padding ajustado para variáveis */
     }
-
 
     .newsletter__formulario {
         flex-direction: column; /* Lista de formulário em coluna */
@@ -72,9 +62,7 @@
         align-items: center;
     }
 
-
     .newsletter__input {
         width: 100%;
     }
-
 }

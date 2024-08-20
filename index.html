@@ -50,8 +50,7 @@
                 <!-- Search Form -->
                 <li class="nav__item nav__item_form">
                     <form class="nav__form" role="search">
-                        <label for="localizacao" class="nav__label">Localização</label>
-                        <input type="search" placeholder="São josé dos campos" id="localizacao" class="nav__input" aria-label="Search location" />
+                        <input type="search" placeholder="São josé dos campos" id="localizacao" class="nav__input" aria-label="Search location"  />
                     </form>
                 </li>
                 <!-- Icons -->
@@ -70,8 +69,10 @@
     </header>
     
     <section class="banner">
+        <div class="banner__container">
         <h2 class="banner__titulo">
             Onde a realidade <br/><span class="banner__titulo-destaque">encontra a fantasia!</span>
+        </div>
         </h2>
     </section>
 
@@ -81,8 +82,7 @@
             <li class="menu-list__item" role="tab">Em breve</li>
         </ul>
 
-        <form role="search" aria-labelledby="search-form">
-            <label for="busca" class="banner__label">Digite sua busca</label>
+        <form role="search">
             <input type="search" id="busca" placeholder="Digite sua busca" class="cartaz__pesquisa" aria-label="Campo de busca"/>
         </form>
 
@@ -125,7 +125,7 @@
             </li>
 
             <li class="filme-list__item">
-                <img src="./images/Card - Amigos do bosque mágico.png" alt="Amigos do bosque mágico" class="filme-list__imagem"/>
+                <img src="./images/Card - Amigos do bosque ma╠ügico.png" alt="Amigos do bosque mágico" class="filme-list__imagem"/>
                 <div class="filme-list__container">
                 <h3 class="film-list__item-titulo">Amigos do bosque mágico</h3>
                 
@@ -161,7 +161,7 @@
             </li>
 
             <li class="filme-list__item">
-                <img src="./images/Card - Desastres do Escritório.png" alt="Desastres do Escritório" class="filme-list__imagem"/>
+                <img src="./images/Card - Desastres do Escrito╠ürio.png" alt="Desastres do Escritório" class="filme-list__imagem"/>
                 <div class="filme-list__container">
                 <h3 class="film-list__item-titulo">Desastres do Escritório</h3>
           
@@ -232,7 +232,9 @@
         </ul>
     </section>
     <section class="combo">
+        <div class="combo__container">
         <h2 class="combo__titulo">Combo <br/><span class="combo__titulo-destaque">Dragon’s Ascent</span></h2>
+    </div>
     </section>
 
     <section class="newsletter" aria-labelledby="newsletter-title">
@@ -242,7 +244,7 @@
             
             <!-- Formulário de inscrição -->
             <form class="newsletter__formulario" role="form" aria-labelledby="newsletter-title" aria-describedby="newsletter-description">
-                <label for="email" class="newsletter__label">E-mail</label>
+    
                 <input type="email" id="email" placeholder="Digite seu melhor e-mail" class="newsletter__input" aria-required="true" aria-label="Campo para digitar o e-mail" />
                 <button type="submit" class="newsletter_button" aria-label="Inscrever-se para receber descontos">Inscrever</button>
             </form>

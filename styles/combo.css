@@ -1,54 +1,61 @@
+/* Combo */
 .combo {
-    height: 25rem; /* Altura ajustada para rem */
-    width: 100%;
+
     background: var(--cor-de-fundo-combo);
     background-image: url("../images/Banner-Pipoca.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 5rem 15rem; /* Padding ajustado para rem */
+   
+    padding: var(--padding-xl) 0; /* Padding ajustado para variáveis */
+}
+
+
+
+.combo__container {
+    max-width: var(--max-width-block);
+    width: 100%;
+    margin: 0 auto;
 }
 
 .combo__titulo {
+
+    width: 50%;
     font-family: var(--fonte-titulo);
-    font-size: 4.75rem; /* Font-size ajustado para rem */
-    line-height: 4rem; /* Line-height ajustado para rem */
-    max-width: 30rem; /* Max-width ajustado para rem */
+    font-size: var(--font-size-xl); /* Font-size ajustado para variáveis */
+    line-height: var(--line-height-xxl); /* Line-height ajustado para variáveis */
     font-weight: 400;
     color: var(--cor-texto-claro);
 }
 
 .combo__titulo-destaque {
     color: var(--cor-texto-destaque);
-    font-size: 4.75rem;
+    font-size: var(--font-size-xxl); /* Font-size ajustado para variáveis */
 }
 
 /* Estilo responsivo para tablets */
 @media (max-width: 768px) {
     .combo {
-        padding: 4rem 6rem; /* Padding ajustado para tablets */
+        padding: var(--padding-l) var(--padding-m); /* Padding ajustado para tablets */
     }
 
     .combo__titulo {
-        font-size: 3rem; /* Font-size ajustado para tablets */
-        line-height: 3.2rem; /* Line-height ajustado para tablets */
-        max-width: 19rem; /* Max-width ajustado para tablets */
+        font-size: var(--font-size-l); /* Font-size ajustado para tablets */
+        line-height: var(--line-height-l); /* Line-height ajustado para tablets */
+        max-width: var(--max-width-m); /* Max-width ajustado para tablets */
     }
 }
 
 /* Estilo responsivo para celulares */
 @media (max-width: 480px) {
     .combo {
-        padding: 2rem 2rem; /* Padding ajustado para celulares */
+        padding: var(--padding-s); /* Padding ajustado para celulares */
         height: 20rem; /* Altura ajustada para celulares */
     }
 
     .combo__titulo {
-        font-size: 2.5rem; /* Font-size ajustado para celulares */
-        line-height: 2.5rem; /* Line-height ajustado para celulares */
-        max-width: 18rem; /* Max-width ajustado para celulares */
+        font-size: var(--font-size-m); /* Font-size ajustado para celulares */
+        line-height: var(--line-height-m); /* Line-height ajustado para celulares */
+        max-width: var(--max-width-s); /* Max-width ajustado para celulares */
     }
 }
