@@ -34,7 +34,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .banner {
         height: 30vh;
         padding-left: 10vw; /* Padding mais reduzido */
@@ -43,7 +43,7 @@
     .banner__titulo {
         font-size: 3rem; /* Tamanho da fonte menor para tablets */
         line-height: 1.2em;
-        width: 90%;
+        width: 60%;
     }
 
     .banner__titulo-destaque {
@@ -51,19 +51,19 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 730px) {
     .banner {
         height: 25vh; /* Altura para celulares */
         padding-left: 5vw; /* Padding menor ainda */
     }
 
     .banner__titulo {
-        font-size: 2.25rem; /* Tamanho da fonte reduzido para celulares */
+        font-size: 2rem; /* Tamanho da fonte reduzido para celulares */
         line-height: 1.2em;
    
     }
 
     .banner__titulo-destaque {
-        font-size: 2.25rem; 
+        font-size: 2rem; 
     }
 }

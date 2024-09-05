@@ -56,9 +56,9 @@
 }
 
 /* Estilo responsivo para tablets */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .cartaz {
-        margin: var(--margin-l) var(--margin-m);
+        padding: 0 var(--padding-xxl);
     }
 
     .menu-list {
@@ -77,9 +77,9 @@
 }
 
 /* Estilo responsivo para celulares */
-@media (max-width: 480px) {
+@media (max-width: 730px) {
     .cartaz {
-        margin: var(--margin-s) var(--margin-xs);
+        padding: 0 var(--padding-m);
     }
 
     .menu-list {
